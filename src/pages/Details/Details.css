@@ -1,0 +1,13 @@
+.show-img{
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.data{
+    color: #EEEEEE;
+}
+
+.data p{
+    font-size: 20px;
+}

@@ -1,0 +1,18 @@
+.show-img{
+    width: 90%;
+}
+
+.show-img img{
+    width: 100%;
+}
+
+a{
+    font-size: 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+}
+
+a:hover{
+    color: #3d8487;
+}

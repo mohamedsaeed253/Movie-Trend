@@ -1,0 +1,17 @@
+form input,select{
+    background-color: #35374B !important;
+    color: #fff !important;
+}
+
+form button{
+    background-color: #950101 !important;
+    transition: 0.3s all ease-in-out;
+}
+
+form button:hover{
+    background-color: #FF0000 !important;
+}
+
+::-webkit-input-placeholder{
+    color: #fff !important;
+}
