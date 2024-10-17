@@ -1,9 +1,11 @@
 .show-img{
     width: 90%;
+    height: 100%;
 }
 
 .show-img img{
     width: 100%;
+    height: 400px;
 }
 
 a{

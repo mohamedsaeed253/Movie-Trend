@@ -14,35 +14,21 @@ import Navbar from "./Components/Navbar/Navbar";
 import Shows from "./pages/Home";
 import Movies from "./pages/Movies";
 import Series from "./pages/Series";
-import Details, { showLoader } from "./pages/Details/Details";
-import MovieDetails, { movieLoader } from "./pages/Details/MovieDerails";
+import Details from "./pages/Details/Details";
 import Login from "./pages/Sign in/Login";
 import Register from "./pages/Sign in/Register";
 
 function App() {
   // need to fix (you need to create details page)
-  const showRouter = (
-    <Route path=":id" loader={showLoader} element={<Details />}></Route>
-  );
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="" element={<Navbar />}>
-        <Route path="/" element={<Shows />}>
-          {showRouter}
-        </Route>
-        <Route path="movie/:page" element={<Movies />}>
-          <Route
-            path=":id"
-            loader={movieLoader}
-            element={<MovieDetails />}
-          ></Route>
-        </Route>
-        <Route path="tv/:page" element={<Series />}>
-          {showRouter}
-        </Route>
+        <Route path="/" element={<Shows />}></Route>
+        <Route path="movie/:page" element={<Movies />}></Route>
+        <Route path="tv/:page" element={<Series />}></Route>
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path=":type/:page/:id/details" element={<Details />} />
       </Route>
     )
   );
