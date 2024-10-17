@@ -16,7 +16,7 @@ export default function Navbar() {
           >
             <ul className="navbar-nav">
               <li className="nav-item mx-2">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <Link className="nav-link" aria-current="page" to="/">
                   Home
                 </Link>
               </li>

@@ -11,3 +11,8 @@
 .data p{
     font-size: 20px;
 }
+
+.data p span{
+    font-weight: 600;
+    color: #ff023dc9;
+}
