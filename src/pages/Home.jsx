@@ -4,8 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchMediaTv } from "../redux/actions/trend-tv-actions";
 import { fetchMediaMovie } from "../redux/actions/trend-movie-actions";
-import MiniCard from "../Components/Card/MiniCard";
+/* import MiniCard from "../Components/Card/MiniCard"; */
 import { fetchTrend } from "../redux/actions/all-trend-action";
+import { motion } from "framer-motion";
 
 export default function Shows() {
   const trendMov = useSelector((state) => state.trendMovie);
@@ -35,21 +36,31 @@ export default function Shows() {
               })}
             </div> */}
           </div>
-          <div className="container trend my-5">
-            <div className="row g-3 my-2">
+          <motion.div variants={{
+            hidden: { opacity: 0 },
+            show: { opacity: 1, transition: { staggerChildren: 0.25 } }
+          }} 
+          initial='hidden' animate='show' className="container trend my-5">
+            <motion.div  variants={{
+            hidden: { opacity: 0 },
+            show: { opacity: 1, transition: { staggerChildren: 0.2 } }
+          }} initial='hidden' animate='show'  className="row g-3 my-2">
               <h2 className="text-white pb-2">Trending Movies</h2>
               {trendMov?.map((Show, index) => {
                 return <Card key={index} data={Show} />;
               })}
-            </div>
+            </motion.div>
             <hr className="text-white" />
-            <div className="row g-3 my-2">
+            <motion.div  variants={{
+            hidden: { opacity: 0 },
+            show: { opacity: 1, transition: { staggerChildren: 0.2 } }
+          }} initial='hidden' animate='show' className="row g-3 my-2">
               <h2 className="text-white pb-2">Trending Series</h2>
               {trendTv?.map((Show, index) => {
                 return <Card key={index} data={Show} />;
               })}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </>
       ) : (
         <div className="container my-5">
