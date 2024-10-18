@@ -6,6 +6,7 @@ import { seriesReducer } from "./reducers/series-reduc";
 import { trendTvReducer } from "./reducers/trend-tv-reducer.js";
 import { DetailsReducer } from "./reducers/details-reducer.js";
 import { genresReducer } from "./reducers/genres-reducer.js";
+import { trendReducer } from "./reducers/trend-reducer..js";
 
 const reducers = combineReducers({
   trendMovie: trendMovieReducer,
@@ -15,6 +16,7 @@ const reducers = combineReducers({
   series: seriesReducer,
   details: DetailsReducer,
   genres: genresReducer,
+  trend: trendReducer,
 });
 
 export const store = createStore(reducers, applyMiddleware(thunk));

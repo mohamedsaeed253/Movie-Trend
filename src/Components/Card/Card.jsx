@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Card.css";
+import { img_prefix } from "../../Assets/Images/handle-url";
 export default function Card(props) {
   let { data, type, page } = props;
 
-  let link = `https://image.tmdb.org/t/p/w500/${data.poster_path}`;
+  let link = `${img_prefix}${data.poster_path}`;
   return (
     <div className="col-md-3 my-2 py-1">
       <div className="">

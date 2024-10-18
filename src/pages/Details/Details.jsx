@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchDetails } from "../../redux/actions/details-actions";
 import { fetchGenres } from "../../redux/actions/genres-actions";
+import { img_prefix } from "../../Assets/Images/handle-url";
 
 export default function Show() {
   const { type, page, id } = useParams();
@@ -19,11 +20,11 @@ export default function Show() {
 
   let arr = [1, 2, 3, 4, 5];
   let star = details.vote_average + 2;
-  let link = `https://image.tmdb.org/t/p/w500/${details.poster_path}`;
+  let link = `${img_prefix}${details.poster_path}`;
   return (
     <div className="p-5">
       <div className="row p-5">
-        <div className="col-md-4 px-5">
+        <div className="col-md-4 px-5 details">
           <div className="show-img">
             <img src={link} alt={details.title || details.name} />
           </div>

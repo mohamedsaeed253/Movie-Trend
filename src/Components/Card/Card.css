@@ -18,3 +18,48 @@ a{
 a:hover{
     color: #3d8487;
 }
+
+.mini-card-container{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: -2%;
+    height: 46%;
+    position: relative;
+}
+
+.mini-card-container i{
+    position: absolute;
+    color: rgba(202, 2, 2, 0.73);
+    z-index: 5;
+    font-size: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px 12px;
+    border-radius: 50%;
+    top: 43%;
+    transition: 0.2s all ease-in-out;
+}
+
+.mini-card-container i:hover{
+    color: rgb(243, 0, 0);
+    background: rgba(37, 35, 35, 0.714);
+    cursor: pointer;
+}
+
+.mini-card-container .right{
+    right: 33.5%;
+}
+
+.mini-card-container .left{
+    left: 33.5%;
+}
+
+.mini-card{
+    width: 200px;
+    height: 100px;
+    margin: 10px 10px;
+    
+}
+
+.mini-card-img{
+    width: 100%;
+    border-radius: 10px;
+}

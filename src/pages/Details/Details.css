@@ -1,6 +1,8 @@
-.show-img{
+.details .show-img img{
     border-radius: 5px;
     overflow: hidden;
+    width: 110%;
+    height: 95% !important;
 }
 
 
