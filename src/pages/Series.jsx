@@ -18,6 +18,9 @@ export default function Movies() {
     <div>
       <ScrollRestoration />
       <div className="container mt-5 pt-1">
+        <h2 className="text-white mt-4 p-2 text-center mov-tv">
+          Popular Series
+        </h2>
         <motion.div
           variants={{
             hidden: { opacity: 0 },

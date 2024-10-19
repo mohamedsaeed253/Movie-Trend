@@ -53,6 +53,12 @@ body {
   text-shadow: none;
 }
 
+.mov-tv{
+  background-color: rgba(148, 1, 1, 0.73);
+  border-radius: 5px;
+  text-shadow: none;
+}
+
 @media (max-width:450px) {
   .panner h1, h2{
     text-shadow: 8px 8px #35374B;
