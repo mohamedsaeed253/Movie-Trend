@@ -25,7 +25,7 @@ export default function Movies() {
           }}
           initial="hidden"
           animate="show"
-          className="row g-3 my-2"
+          className="row justify-content-around g-3 my-2"
         >
           {seriesList.map((Show, index) => {
             return <Card key={index} data={Show} page={page} type={type} />;

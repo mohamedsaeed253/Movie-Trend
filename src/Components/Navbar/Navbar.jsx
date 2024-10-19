@@ -5,11 +5,22 @@ export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg nav-bg navbar-dark p-1">
-        <div className="container ">
-          <Link className="navbar-brand fs-2 m-0 p-0 fw-bold" to="">
+        <div className="container">
+          <Link className="navbar-brand fs-2 m-0 p-0 fw-bold" to="/">
             <i className="fa-solid fa-play fs-3 me-1"></i>
             Trend
           </Link>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div
             className="collapse navbar-collapse justify-content-between px-4 nav-links"
             id="navbarNav"

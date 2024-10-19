@@ -9,12 +9,10 @@ export default function Card(props) {
   return (
     <motion.div
       variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
-      className="col-md-3 my-2 py-1"
+      className="col-lg-3 col-sm-5 my-2 py-1 d-flex justify-content-around"
     >
-      <div className="">
-        <div className="show-img">
-          <img src={link} alt={data.title || data.name} />
-        </div>
+      <div className="show-img">
+        <img src={link} alt={data.title || data.name} />
         <Link
           to={`../${type || data.media_type}/${page || "trend"}/${
             data.id

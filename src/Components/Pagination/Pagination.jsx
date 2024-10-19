@@ -11,7 +11,7 @@ export default function Pagination({ type }) {
   return (
     <div>
       <nav aria-label="Page navigation example border-0">
-        <ul className="pagination justify-content-center my-5 border-0">
+        <ul className="pagination flex-wrap justify-content-center my-5 border-0">
           <li className={`page-item ${Number(page) === 1 && "disabled"}`}>
             <Link className="page-link pagi" onClick={() => navigate(lnkPre)}>
               Previous

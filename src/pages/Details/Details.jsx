@@ -23,13 +23,13 @@ export default function Show() {
   let link = `${img_prefix}${details.poster_path}`;
   return (
     <div className="p-5">
-      <div className="row p-5">
-        <div className="col-md-4 px-5 details">
+      <div className="details-container row justify-content-around p-5">
+        <div className="col-lg-4 col-md-9 mb-5 px-5 details">
           <div className="show-img">
             <img src={link} alt={details.title || details.name} />
           </div>
         </div>
-        <div className="col-md-8">
+        <div className="col-lg-8 col-md-12 p-0">
           <div className="data">
             <h2 className="mb-0">{details.title || details.name}</h2>
             <p className="m-0">
@@ -64,7 +64,10 @@ export default function Show() {
               })}
             </p>
 
-            <p>{details.overview}</p>
+            <p>
+              <span>Overview: </span>
+              {details.overview}
+            </p>
           </div>
         </div>
       </div>

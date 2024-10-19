@@ -36,25 +36,39 @@ export default function Shows() {
               })}
             </div> */}
           </div>
-          <motion.div variants={{
-            hidden: { opacity: 0 },
-            show: { opacity: 1, transition: { staggerChildren: 0.25 } }
-          }} 
-          initial='hidden' animate='show' className="container trend my-5">
-            <motion.div  variants={{
-            hidden: { opacity: 0 },
-            show: { opacity: 1, transition: { staggerChildren: 0.2 } }
-          }} initial='hidden' animate='show'  className="row g-3 my-2">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0 },
+              show: { opacity: 1, transition: { staggerChildren: 0.25 } },
+            }}
+            initial="hidden"
+            animate="show"
+            className="container trend my-5"
+          >
+            <motion.div
+              variants={{
+                hidden: { opacity: 0 },
+                show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+              }}
+              initial="hidden"
+              animate="show"
+              className="row justify-content-around g-3 my-2"
+            >
               <h2 className="text-white pb-2">Trending Movies</h2>
               {trendMov?.map((Show, index) => {
                 return <Card key={index} data={Show} />;
               })}
             </motion.div>
             <hr className="text-white" />
-            <motion.div  variants={{
-            hidden: { opacity: 0 },
-            show: { opacity: 1, transition: { staggerChildren: 0.2 } }
-          }} initial='hidden' animate='show' className="row g-3 my-2">
+            <motion.div
+              variants={{
+                hidden: { opacity: 0 },
+                show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+              }}
+              initial="hidden"
+              animate="show"
+              className="row justify-content-around g-3 my-2"
+            >
               <h2 className="text-white pb-2">Trending Series</h2>
               {trendTv?.map((Show, index) => {
                 return <Card key={index} data={Show} />;

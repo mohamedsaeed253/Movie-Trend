@@ -18,3 +18,14 @@
     font-weight: 600;
     color: #ff023dc9;
 }
+
+@media (max-width:450px) {
+    .details-container{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .details{
+        padding: 0 !important;
+    }
+    
+}

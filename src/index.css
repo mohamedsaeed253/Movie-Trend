@@ -32,6 +32,7 @@ body {
   font-weight: 600;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .panner h1, h2{
@@ -50,4 +51,24 @@ body {
   background-color: rgba(148, 1, 1, 0.73);
   border-radius: 5px;
   text-shadow: none;
+}
+
+@media (max-width:450px) {
+  .panner h1, h2{
+    text-shadow: 8px 8px #35374B;
+  }
+  
+  .panner h1{
+    font-size: 55px;
+  }
+  
+  .panner h2{
+    font-size: 40px;
+  }
+  
+  .trend h2{
+    background-color: rgba(148, 1, 1, 0.73);
+    border-radius: 5px;
+    text-shadow: none;
+  }
 }
