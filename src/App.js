@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import {
   createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Route,
   RouterProvider,
@@ -21,7 +22,7 @@ import Register from "./pages/Sign in/Register";
 
 function App() {
   // need to fix (you need to create details page)
-  const router = createBrowserRouter(
+  const router = createHashRouter(
     createRoutesFromElements(
       <Route path="" element={<Navbar />}>
         <Route path="/" element={<Shows />}></Route>
