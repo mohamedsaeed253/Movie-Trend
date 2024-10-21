@@ -24,7 +24,7 @@ body {
 
 .panner{
   height: 100vh;
-  background-image: linear-gradient(180deg, rgba(148, 1, 1, 0.73),rgba(53, 54, 74, 0.85) ), url('../public/123.jpg');
+  background-image: linear-gradient(180deg, rgba(148, 1, 1, 0.73),rgba(53, 54, 74, 0.85) ), url('./Assets/Images/123.jpg');
   background-position: center;
   background-size: cover;
   box-shadow: 1px 0px 15px 10px #000;

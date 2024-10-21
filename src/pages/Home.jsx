@@ -26,7 +26,7 @@ export default function Shows() {
       {undefined === id.id ? (
         <>
           <div className="panner d-flex flex-column overflow-hidden">
-            <h1>The Leatest Trending</h1>
+            <h1>The Latest Trending</h1>
             <h2 className="mb-5">Movies & Series</h2>
             {/* <div className="d-flex mini-card-container">
               <i class="fa-solid fa-angle-right right"></i>

@@ -63,3 +63,19 @@ a:hover{
     width: 100%;
     border-radius: 10px;
 }
+
+@media (max-width:430px) {
+    .movie-card{
+        width: 50%;
+        height: auto;
+        padding: 0;
+    }
+
+    .show-img img{
+        height: 85%;
+    }
+
+    a{
+        font-size: 14px;
+    }
+}

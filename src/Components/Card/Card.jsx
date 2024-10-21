@@ -9,7 +9,7 @@ export default function Card(props) {
   return (
     <motion.div
       variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
-      className="col-lg-3 col-sm-5 my-2 py-1 d-flex justify-content-around"
+      className="col-lg-3 col-sm-4 my-2 py-1 d-flex justify-content-around movie-card"
     >
       <div className="show-img">
         <img src={link} alt={data.title || data.name} />
